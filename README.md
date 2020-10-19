@@ -7,6 +7,20 @@
 #### API to use: 
 https://www.dictionaryapi.com/products/api-elementary-dictionary
 
+#### API keys
+Key (School Dictionary):
+
+24ddd944-fd66-46a6-be86-67fd29e97f0f
+
+Key (Elementary Dictionary):
+
+37b7623c-c665-4cd7-b09c-422c6859cd77
+
+
+#### API key direct URL link
+https://www.dictionaryapi.com/api/v3/references/sd2/json/test?key=37b7623c-c665-4cd7-b09c-422c6859cd77
+
+#### API data:
 {
 pl: "Word History",
 pt: [

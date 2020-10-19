@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: #111d4a;
+    color: turquoise;
 }
 
 h1 {
@@ -65,4 +66,9 @@ nav {
     position: absolute;
     top: 7px;
     right: 100px
+}
+
+.dogs {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 }

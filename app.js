@@ -18,12 +18,12 @@ searchButton.addEventListener('click', (event) => {
 
     const getWord = async () => {
         try {
-            axios.get('https://www.dictionaryapi.com/api/v3/references/sd2/json/map?key=37b7623c-c665-4cd7-b09c-422c6859cd77')
+            axios.get(`https://www.dictionaryapi.com/api/v3/references/sd2/json/${searchWord}?key=37b7623c-c665-4cd7-b09c-422c6859cd77`)
             .then((response)=>{
                 let wordStuff = response.data[0].shortdef
                 let dictionaryDiv = document.querySelector('.dictionary')
                 dictionaryDiv.textContent = wordStuff
-                console.log(response.data[0].shortdef)
+                console.log(response.data[data[0]].shortdef)
 
             })
            
@@ -37,5 +37,6 @@ searchButton.addEventListener('click', (event) => {
     const buildResult = (data) => {
         return result
   }
-    buildResult()     
+    buildResult()   
+  
 })

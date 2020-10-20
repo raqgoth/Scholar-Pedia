@@ -24,6 +24,15 @@ nav {
     font-size: 20px;
 }
 
+
+#clearSearch {
+    width: 100px;
+    color :black;
+    font-size: 12px;
+    height: 100px;
+    margin: 0;
+}
+
 #word {
     
     background-color: #eaeaea;
@@ -65,10 +74,10 @@ nav {
     content: '🔍';
     position: absolute;
     top: 7px;
-    right: 100px
+    right: 100px;
 }
 
-.dogs {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+
+
+        
 }

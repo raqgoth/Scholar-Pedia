@@ -1,6 +1,6 @@
 # Scholar-Pedia
 
-## A fun and engaging encyclopedia for elementary students
+## A fun and engaging dictionary for elementary students
 
 ### created by: Raquel Gothardt 
 

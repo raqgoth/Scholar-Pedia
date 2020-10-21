@@ -13,38 +13,87 @@
 <h2>A fun and engaging encyclopedia for elementary students</h2>
     </header>
 
-<nav class = "menu"> 
-    <ul class = "about">about me</ul>
-    <ul class = "flash">Make your words into flashcards <a target = "blank"href = 'https://quizlet.com'>here!</a>
-    </ul>
-</nav>
-<article>
-  <button id = "clearSearch">clear search</button>
-  <div class = "typed word"></div>
- 
-       
-
-        <button id="search-button">search</button>
+<nav> 
+    <div><a href = #me>about me</a></div>
+    <div> Make your words into flashcards <a target = "blank"href = 'https://quizlet.com'>here!</a>
     </div>
+    <div><a href =#contact>contact me</a></div>
+</nav>
+
+<article>
+<div claas = "search-box">
+    <button id = "clearSearch">clear search</button>
+    <div class = "typed word"></div>
+    <button id="search-button">search</button>
     <div class = "dictionary">
     </div>
-        <input id = "search-input" placeholder="type your search here" name="word"/>
-   <div class = "word-search"></div>
-        <div class = "short-def"></div>
-    <div class = "synonim"></div>
+    <input id = "search-input" placeholder="type your search here" name="word"/>
 </div>
-    </article>
+<div class = "results-box">    
+    <div class = "word-search"></div>
+    <div class = "typed word"></div>
+    <div class = "short-def"></div>
+    <div class = "synonim"></div>
+</article>
+</div>
 
     
-   <img src = "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/how-does-a-word-get-into-the-dictionary-2643-bc45e0ceec88f1d8de11b783a328fd49@2x.jpg">
-  
-      
-    <footer class = "footer">
+<img src = "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/how-does-a-word-get-into-the-dictionary-2643-bc45e0ceec88f1d8de11b783a328fd49@2x.jpg">
+<div class = "break">
 
-    </footer>
+</div>  
+<div id = "me">
+    <h3>About me</h3>
+    <p> Hi! My name is Raquel Gothardt. I am learning software engineering. 
+        I have  10 years experience in teaching elementary and preschool,
+        general ed, special ed, and ENL students.
+        I had so much fun making this website!
+        I hope it will be a fun, interactive place for children to 
+        develop their vocabiulary. 
+    </p>
+
+</div>
+
+<div class = "break">
+
+</div>
+<!-- code in contact area below taken from https://www.w3schools.com/howto/howto_css_contact_section.asp -->
+<div id = "contact">
+            <div style="text-align:center">
+              <h2>Contact me</h2>
+            </div>
+            <div class="row">
+              <div class="column">
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Colombia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          
+        
+
+
+</div>
+<footer class = "footer">
+
+</footer>
 </div>
    
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

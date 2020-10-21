@@ -32,7 +32,7 @@ searchButton.addEventListener('click', (event) => {
                 dictionaryDiv.textContent = wordStuff
                 console.log(response.data[[0]].shortdef)
                 words.innerHTML = `${searchWord}`
-                displayWord.innerHTML = (response.data[[0]].shortdef)
+                displayWord.innerHTML = ("definition:  "+(response.data[[0]].shortdef))
             })
             axios.get(`https://dictionaryapi.com/api/v3/references/thesaurus/json/${searchWord}?key=b7b8c718-bbf6-49f6-a5f2-0e8a2a8f1c6b`)
             .then((response)=>{

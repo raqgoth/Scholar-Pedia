@@ -34,9 +34,21 @@ searchButton.addEventListener('click', (event) => {
                 console.log(response.data[[0]].shortdef)
                 words.innerHTML = `${searchWord}`
                 displayWord.innerHTML = (response.data[[0]].shortdef)
-                
-
             })
+            axios.get(`https://dictionaryapi.com/api/v3/references/thesaurus/json/${searchWord}?key=b7b8c718-bbf6-49f6-a5f2-0e8a2a8f1c6b`)
+            .then((response)=>{
+             console.log(response.data[0].meta.syns[0])
+             let synonims1 = response.data[0].meta.syns 
+             for (let i=0; i<synonims1.length; i++) {
+                 let list = document.createElement('div')
+                 list.innerText = ("synonym: " + synonims1[i])
+                synonim.appendChild(list)
+        
+             }
+
+                
+            })
+      
            
         } catch (error) {
              console.log(error)
@@ -59,26 +71,3 @@ displayWord.innerHTML = ''
 words.innerHTML = ''
 synonim.innerHTML = ''
 })
-
-
-synButton.addEventListener('click', (event) => {
-    event.preventDefault()
-
-    const getSyn = async () => {
-        try {
-            axios.get(`https://dictionaryapi.com/api/v3/references/thesaurus/json/${searchWord}?key=b7b8c718-bbf6-49f6-a5f2-0e8a2a8f1c6b`)
-            .then((response)=>{
-             
-                searchInput.addEventListener('change', function(event) {
-                    synStuff += event.syns.value
-                    console.log(synStuff)
-                 } )}
-            )}
-         catch (error) {
-             console.log(error)
-        } 
-       
-    getSyn()
-
-}}
-)

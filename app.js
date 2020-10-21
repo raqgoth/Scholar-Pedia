@@ -3,6 +3,8 @@ const API_KEY = '37b7623c-c665-4cd7-b09c-422c6859cd77'
 const WORD_URL = (`https://www.dictionaryapi.com/api/v3/references/sd2/json/test?key=37b7623c-c665-4cd7-b09c-422c6859cd77`)
 const SYN_URL = (`https://dictionaryapi.com/api/v3/references/thesaurus/json/test?key=b7b8c718-bbf6-49f6-a5f2-0e8a2a8f1c6b`)
 
+let submitButton = document.getElementById('submit')
+let thankYouResult = document.getElementById('thankYou')
 let buildResult = document.querySelector('.dictionary')
 let searchInput = document.getElementById('search-input')
 let searchButton = document.getElementById('search-button')
@@ -63,4 +65,8 @@ searchWord = ''
 displayWord.innerHTML = ''
 words.innerHTML = ''
 synonim.innerHTML = ''
+})
+
+submitButton.addEventListener('click', (event) => {
+    thankYouResult.innerHTML = "Thank you for contacting me. I will get back to you as soon as possible."
 })

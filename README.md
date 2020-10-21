@@ -20,15 +20,17 @@ pt: [
 
 #### user stories 
 
-* user will be able to access the Mirriam Webster's Elementary dictionary and the Mirriam Webster's school dictionary online 
+* user will be able to access the Mirriam Webster's Elementary dictionary and the Mirriam Webster's college thesarus dictionary online 
 
-* the user will be able to search for keywords and find information on several topics 
+* the user will be able to search for words and find the definition and synonyms of the word. 
 
-* the user, ideally an elementary student, will be able to utilize this information to write research papers and research projects 
+* the user, ideally an elementary student, will be able to utilize this information to develop their English vocabulary. 
 
-* the users could also be Teachers, who will be able to use this as a resource for educational videos, and as a way to add technology in the classroom. 
+* the user will be able to open a new link to a different website, quizlet, to put their words into flashcards and study for vocab tests.
 
-* users will be able to access safe educational resources at their grade level
+* users will be able to access safe educational resources at their grade level, while having fun and being engaged.
+
+* while reading independently, students run into new/unfamiliar words. they will be able to look them up and find their definition and synonyms and understand what they are reading.
 
 ### Trello profile link
 https://trello.com/b/CseJTFbA/raquels-scholar-pedia

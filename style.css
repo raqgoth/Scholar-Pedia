@@ -30,34 +30,16 @@ nav {
     font-size: 30px;
     height: 50px;
     position: relative;
-    
     top: 200px;
 }
 
-#word {
-    
-    background-color: #eaeaea;
-    border-radius: 3px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    max-width: 1000px;
-    text-align: center;
-    margin-right: 40px
-
-}
-
-
-#wordList {
-    display: grid;
-    max-width: 100px;
-}
 
 #search-button {
     width: 200px;
     height: 80px;
     font-size: 30px;
     position: relative;
-    left: 410px;
+    left: 500px;
     top: 80px;
 }
 
@@ -66,29 +48,10 @@ nav {
     height: 60px;
     font-size: 30px;
     position: relative;
-    
-
-}
-
-#searchWrapper {
-    position: relative;
-}
-
-#searchWrapper::after {
-    content: '🔍';
-    position: absolute;
-    top: 7px;
-    right: 100px;
 }
 
 
-.flash {
-    position: relative;
-   bottom: 200px;
-    padding: 10px;
-    font-size: 20px;
-    left: 300px;
-}
+
 
 img {
         border-radius: 60%;
@@ -111,14 +74,18 @@ img {
       }
 
 .short-def {
-    font-size: 70px;
+    position: relative;
+    font-size: 60px;
     text-align: center;
+    bottom: 200px;
+    top: 50px;
 }
 
 .synonim {
     font-size: 30px;
     position: relative;
     top: 200px;
+    max-width: 400px;
 }
 .footer {
     background-color: #7c98b3;

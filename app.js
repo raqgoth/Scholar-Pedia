@@ -9,7 +9,6 @@ let searchButton = document.getElementById('search-button')
 let displayWord = document.querySelector('.word-search')
 let synonim = document.querySelector('.synonim')
 let synStuff = ""
-let synButton = document.getElementById('synSearch')
 console.log (searchInput, searchButton)
 let words = document.querySelector('.short-def')
 let searchWord = ""
@@ -42,14 +41,9 @@ searchButton.addEventListener('click', (event) => {
              for (let i=0; i<synonims1.length; i++) {
                  let list = document.createElement('div')
                  list.innerText = ("synonym: " + synonims1[i])
-                synonim.appendChild(list)
-        
-             }
-
-                
-            })
-      
-           
+                synonim.appendChild(list)       
+             }              
+            })          
         } catch (error) {
              console.log(error)
         } 
@@ -63,7 +57,6 @@ searchButton.addEventListener('click', (event) => {
     buildResult()   
   
 })
-
 clearSearchButton.addEventListener('click', (event) => {
 searchInput.value = ''
 searchWord = ''

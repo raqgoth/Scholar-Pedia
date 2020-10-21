@@ -1,8 +1,9 @@
+//  API 
 const API_KEY = '37b7623c-c665-4cd7-b09c-422c6859cd77'
-
 const WORD_URL = (`https://www.dictionaryapi.com/api/v3/references/sd2/json/test?key=37b7623c-c665-4cd7-b09c-422c6859cd77`)
 const SYN_URL = (`https://dictionaryapi.com/api/v3/references/thesaurus/json/test?key=b7b8c718-bbf6-49f6-a5f2-0e8a2a8f1c6b`)
 
+//variables to be used
 let submitButton = document.getElementById('submit')
 let thankYouResult = document.getElementById('thankYou')
 let buildResult = document.querySelector('.dictionary')
@@ -17,6 +18,7 @@ let searchWord = ""
 let wordStuff = ""
 let clearSearchButton = document.getElementById('clearSearch')
 
+//functions to change the search input to what the user writes, and search for it, when they press the search button
 searchInput.addEventListener('change', function(event) {
 searchWord += event.target.value
 console.log(searchWord)
@@ -25,6 +27,7 @@ console.log(searchWord)
 searchButton.addEventListener('click', (event) => {
     event.preventDefault()
 
+    //functions to get the word
     const getWord = async () => {
         try {
             axios.get(`https://www.dictionaryapi.com/api/v3/references/sd2/json/${searchWord}?key=37b7623c-c665-4cd7-b09c-422c6859cd77`)
@@ -59,6 +62,8 @@ searchButton.addEventListener('click', (event) => {
     buildResult()   
   
 })
+
+//function to clear search
 clearSearchButton.addEventListener('click', (event) => {
 searchInput.value = ''
 searchWord = ''
@@ -67,6 +72,7 @@ words.innerHTML = ''
 synonim.innerHTML = ''
 })
 
+//function to display message of "thank you" ater user clicks submit on the contact form.
 submitButton.addEventListener('click', (event) => {
     thankYouResult.innerHTML = "Thank you for contacting me. I will get back to you as soon as possible."
 })

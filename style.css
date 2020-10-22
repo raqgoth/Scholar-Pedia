@@ -57,7 +57,9 @@ nav:last-child {
     position: relative;
 }
 
-
+.flex {
+  display: flex;
+}
 img {
         border-radius: 60%;
         max-width: 40%;
@@ -161,6 +163,13 @@ input[type=text], select, textarea {
   
   .results-box {
     flex-grow: 3;
+}
+
+#add-button {
+  font-size: 20px;
+  background-color: green;
+  padding: 10px;
+  bottom:200px;
 }
 
 .footer {
